@@ -1,5 +1,5 @@
 // src/data/questions.js
-
+const GRAPH = (filename) => import.meta.env.BASE_URL + "graphs/" + filename;
 export const QUESTION_BANK = [
 
     // ---------------- 2006 MCQs ---------------- 
@@ -40,7 +40,7 @@ export const QUESTION_BANK = [
         "year": 2006,
         "marks": 1,
         "stemHtml": "The diagram shows the approximate orbit of the dwarf planet Eris (X) around the Sun (S). Which of the following statements is <b>false</b>?",
-        "image": "/graphs/2006-3.png",
+        "image": GRAPH("/graphs/2006-3.png"),
         "options": [
             { "text": "Eris moves fastest at point D." },
             { "text": "Eris moves at the same speed at points A and C." },
@@ -524,7 +524,7 @@ export const QUESTION_BANK = [
         "stemParts": [
             "A triangular glass prism ... What happens to the light beam at the prism?"
         ],
-        "image": "/graphs/2009-21.png",
+        "image": GRAPH("/graphs/2009-21.png"),
         "options": [
             { "text": "It is bent up" },
             { "text": "It is bent down" },
@@ -645,7 +645,7 @@ export const QUESTION_BANK = [
     {
         id: '2011-17', year: 2011, marks: 1,
         stem: 'What is the resistance of the following network of resistors between points A and B?',
-        image: '/graphs/2011-17.png',
+        image: GRAPH('/graphs/2011-17.png'),
         options: [
             { math: '\\tfrac{R}{2}' }, { math: '\\tfrac{5R}{3}' },
             { math: 'R' }, { math: '\\tfrac{3R}{5}' }
@@ -701,7 +701,7 @@ export const QUESTION_BANK = [
         tags: ['maths']
     },
     {
-        id: '2012-17', year: 2012, marks: 2, stem: 'A massive slider starts from rest from a point S (which is at the same height as a point T at the top of the track) and slides along a frictionless circular track as sketched in figure below. The slider', image: '/graphs/2012-17.png', options: [{ text: 'does not get to T.' }, { text: 'gets to T and falls straight down.' }, { text: 'gets to T but then, leaves the track and falls down following a parabola trajectory to the left.' }, { text: 'passes T staying on the track all the way through.' }], correct: 'A',
+        id: '2012-17', year: 2012, marks: 2, stem: 'A massive slider starts from rest from a point S (which is at the same height as a point T at the top of the track) and slides along a frictionless circular track as sketched in figure below. The slider', image: GRAPH('/graphs/2012-17.png'), options: [{ text: 'does not get to T.' }, { text: 'gets to T and falls straight down.' }, { text: 'gets to T but then, leaves the track and falls down following a parabola trajectory to the left.' }, { text: 'passes T staying on the track all the way through.' }], correct: 'A',
         tags: ['circular motion', 'dynamics', 'gravity']
     },
 
@@ -719,7 +719,7 @@ export const QUESTION_BANK = [
         "year": 2013,
         "marks": 2,
         "stem": "Consider the resistor network shown below. What is the overall resistance between A and B?",
-        "image": "/graphs/2013-13.png",
+        "image": GRAPH("/graphs/2013-13.png"),
         "options": [
             { "math": "\\tfrac{2R}{7}" },
             { "math": "\\tfrac{R}{2}" },
@@ -744,7 +744,7 @@ export const QUESTION_BANK = [
         stemParts: [
             "Excluding Pluto, for the planets in our solar system, in order of increasing mean distance from the Sun, which of the following statements is/are correct?\n",
         ],
-        image: '/graphs/2014-10.png',
+        image: GRAPH('/graphs/2014-10.png'),
         options: [
             { text: "i, ii and v" },
             { text: "ii only" },
@@ -827,7 +827,7 @@ export const QUESTION_BANK = [
     {
         id: '2017-05', year: 2017, marks: 2,
         stemParts: ['Which of the following integrals are equal to zero?'],
-        image: '/graphs/2017-5.png',
+        image: GRAPH('/graphs/2017-5.png'),
         options: [
             { text: 'None of these' },
             { math: 'I_1 \\text{ and } I_4' },
@@ -841,7 +841,7 @@ export const QUESTION_BANK = [
     {
         id: '2017-06', year: 2017, marks: 2,
         stem: 'The graph below could represent which of the following functions?',
-        image: '/graphs/2017-6.png',
+        image: GRAPH('/graphs/2017-6.png'),
         options: [
             { math: '\\tfrac{1}{x−1}+\\tfrac{2}{x+3}' },
             { math: '-\\tfrac{1}{x^2−2x+3}' },
@@ -881,7 +881,7 @@ export const QUESTION_BANK = [
     {
         id: '2017-09', year: 2017, marks: 2,
         stem: 'What is the value of the current I in the circuit below?',
-        image: '/graphs/2017-9.png',
+        image: GRAPH('/graphs/2017-9.png'),
         options: [
             { math: '\\tfrac{V}{4R}' },
             { math: '\\tfrac{3V}{5R}' },
@@ -910,7 +910,7 @@ export const QUESTION_BANK = [
             'Consider the pulley system below supporting an object with mass ', { math: 'm' }, '. Assume gravitational acceleration ', { math: 'g' },
             ', pulleys massless/frictionless, string massless/inextensible. With how much force ', { math: 'F' }, ' must the string be pulled to keep the mass at the same height?'
         ],
-        image: '/graphs/2017-11.png',
+        image: GRAPH('/graphs/2017-11.png'),
         options: [
             { math: '\\tfrac{mg}{3}' }, { math: '\\tfrac{mg}{2}' }, { math: 'mg' }, { math: '2mg' }, { math: '3mg' }
         ],
@@ -943,7 +943,7 @@ export const QUESTION_BANK = [
         tags: ['maths']
     },
     {
-        id: '2018-02', year: 2018, marks: 2, stem: 'Which of the curves shown in the figure is not a trajectory in the gravitational field of a central star at the point (x=0, y=0) marked by the star symbol?', image: '/graphs/2018-2.png', options: [{ text: 'All are trajectories' }, { text: 'none of these is a trajectory' }, { text: '5 is not a trajectory' }, { text: '4 and 5 are not trajectories' }, { text: '3 is not a trajectory' }], correct: 'E',
+        id: '2018-02', year: 2018, marks: 2, stem: 'Which of the curves shown in the figure is not a trajectory in the gravitational field of a central star at the point (x=0, y=0) marked by the star symbol?', image: GRAPH('/graphs/2018-2.png'), options: [{ text: 'All are trajectories' }, { text: 'none of these is a trajectory' }, { text: '5 is not a trajectory' }, { text: '4 and 5 are not trajectories' }, { text: '3 is not a trajectory' }], correct: 'E',
         tags: ['gravity', 'astronomy', 'dynamics']
     },
     {
@@ -1001,7 +1001,7 @@ export const QUESTION_BANK = [
         tags: ['maths']
     },
     {
-        id: '2019-02', year: 2019, marks: 2, stemParts: ['Which values of ', { math: 'x' }, ' and ', { math: 'y' }, ' solve the following equations simultaneously:'], image: '/graphs/2019-2.png', options: [{ text: 'x = 2; y = 4' }, { text: 'x = −2; y = −4' }, { text: 'x = 2; y = −4' }, { text: 'x = −2; y = 4' }, { text: 'no solution exists' }], correct: 'A',
+        id: '2019-02', year: 2019, marks: 2, stemParts: ['Which values of ', { math: 'x' }, ' and ', { math: 'y' }, ' solve the following equations simultaneously:'], image: GRAPH('/graphs/2019-2.png'), options: [{ text: 'x = 2; y = 4' }, { text: 'x = −2; y = −4' }, { text: 'x = 2; y = −4' }, { text: 'x = −2; y = 4' }, { text: 'no solution exists' }], correct: 'A',
         tags: ['maths']
     },
     {
@@ -1025,7 +1025,7 @@ export const QUESTION_BANK = [
         tags: ['maths']
     },
     {
-        "id": "2019-08", "year": 2019, "marks": 2, "stem": "Without explicit calculation state which integrals are non-zero.", "image": "/graphs/2019-8.png", "options": [{ "text": "2 and 3" }, { "text": "1 and 4" }, { "text": "1 and 3" }, { "text": "2 and 4" }, { "text": " all" }], "correct": "A",
+        "id": "2019-08", "year": 2019, "marks": 2, "stem": "Without explicit calculation state which integrals are non-zero.", "image": GRAPH("/graphs/2019-8.png"), "options": [{ "text": "2 and 3" }, { "text": "1 and 4" }, { "text": "1 and 3" }, { "text": "2 and 4" }, { "text": " all" }], "correct": "A",
         tags: ['maths']
     },
     {
@@ -1033,11 +1033,11 @@ export const QUESTION_BANK = [
         tags: ['electricity', 'maths']
     },
     {
-        id: '2019-10', year: 2019, marks: 2, stem: 'When the phase of the Moon as seen from the Earth is Full, what phase of the Earth is seen by an observer on the Moon?', image: '/graphs/2019-10.png', options: [{ text: 'A' }, { text: 'B' }, { text: 'C' }, { text: 'D' }, { text: 'E' }], correct: 'E',
+        id: '2019-10', year: 2019, marks: 2, stem: 'When the phase of the Moon as seen from the Earth is Full, what phase of the Earth is seen by an observer on the Moon?', image: GRAPH('/graphs/2019-10.png'), options: [{ text: 'A' }, { text: 'B' }, { text: 'C' }, { text: 'D' }, { text: 'E' }], correct: 'E',
         tags: ['astronomy']
     },
     {
-        id: '2019-11', year: 2019, marks: 2, stem: 'In the circuit shown below all resistors have the same resistance R and the light bulb has a fixed resistance. You wish to change the state of the switches so that the brightness of the bulb increases from its minimum to its maximum. Which sequence of switch states will achieve this?', image: '/graphs/2019-11.png', options: [{ text: 'both closed → only A closed → only B closed' }, { text: 'both closed → only B closed → only A closed' }, { text: 'only B closed → only A closed → both closed' }, { text: 'only A closed → only B closed → both closed' }, { text: 'all states give the same brightness' }], correct: 'C',
+        id: '2019-11', year: 2019, marks: 2, stem: 'In the circuit shown below all resistors have the same resistance R and the light bulb has a fixed resistance. You wish to change the state of the switches so that the brightness of the bulb increases from its minimum to its maximum. Which sequence of switch states will achieve this?', image: GRAPH('/graphs/2019-11.png'), options: [{ text: 'both closed → only A closed → only B closed' }, { text: 'both closed → only B closed → only A closed' }, { text: 'only B closed → only A closed → both closed' }, { text: 'only A closed → only B closed → both closed' }, { text: 'all states give the same brightness' }], correct: 'C',
         tags: ['electricity']
     },
     {
@@ -1047,7 +1047,7 @@ export const QUESTION_BANK = [
 
     // ---------------- 2020 MCQs (updated) ----------------
     {
-        id: '2020-01', year: 2020, marks: 2, stemParts: ['The stable isotopes of carbon, nitrogen and oxygen are represented symbolically below:\n', { math: '{}^{12}_{6}\\mathrm{C},\\ {}^{13}_{6}\\mathrm{C},\\ {}^{14}_{7}\\mathrm{N},\\ {}^{15}_{7}\\mathrm{N},\\ {}^{16}_{8}\\mathrm{O},\\ {}^{17}_{8}\\mathrm{O},\\ {}^{18}_{8}\\mathrm{O}' }, '\nWhich of the following statements are true?'], image: '/graphs/2020-1.png', options: [{ text: '1, 3, 4' }, { text: '3, 4, 5' }, { text: '2, 3, 4' }, { text: '1, 2, 3' }, { text: '2, 3, 5' }], correct: 'C',
+        id: '2020-01', year: 2020, marks: 2, stemParts: ['The stable isotopes of carbon, nitrogen and oxygen are represented symbolically below:\n', { math: '{}^{12}_{6}\\mathrm{C},\\ {}^{13}_{6}\\mathrm{C},\\ {}^{14}_{7}\\mathrm{N},\\ {}^{15}_{7}\\mathrm{N},\\ {}^{16}_{8}\\mathrm{O},\\ {}^{17}_{8}\\mathrm{O},\\ {}^{18}_{8}\\mathrm{O}' }, '\nWhich of the following statements are true?'], image: GRAPH('/graphs/2020-1.png'), options: [{ text: '1, 3, 4' }, { text: '3, 4, 5' }, { text: '2, 3, 4' }, { text: '1, 2, 3' }, { text: '2, 3, 5' }], correct: 'C',
         tags: ['maths']
     },
     {
@@ -1055,7 +1055,7 @@ export const QUESTION_BANK = [
         tags: ['maths']
     },
     {
-        id: '2020-03', year: 2020, marks: 2, stem: 'Which ammeter A, B, C, D, E gives the highest reading?', image: '/graphs/2020-3.png', options: [{ text: 'A' }, { text: 'B' }, { text: 'C' }, { text: 'D' }, { text: 'E' }], correct: 'D',
+        id: '2020-03', year: 2020, marks: 2, stem: 'Which ammeter A, B, C, D, E gives the highest reading?', image: GRAPH('/graphs/2020-3.png'), options: [{ text: 'A' }, { text: 'B' }, { text: 'C' }, { text: 'D' }, { text: 'E' }], correct: 'D',
         tags: ['electricity']
     },
     {
@@ -1093,7 +1093,7 @@ export const QUESTION_BANK = [
         tags: ['maths']
     },
     {
-        id: '2021-02', year: 2021, marks: 2, stem: 'What is the effective spring constant of the combination of springs shown (each spring has constant k)?', image: '/graphs/2021-2.png', options: [{ math: '\\tfrac{5}{6}k' }, { math: 'k' }, { math: '\\tfrac{6}{5}k' }, { math: '2k' }, { math: '5k' }], correct: 'C',
+        id: '2021-02', year: 2021, marks: 2, stem: 'What is the effective spring constant of the combination of springs shown (each spring has constant k)?', image: GRAPH('/graphs/2021-2.png'), options: [{ math: '\\tfrac{5}{6}k' }, { math: 'k' }, { math: '\\tfrac{6}{5}k' }, { math: '2k' }, { math: '5k' }], correct: 'C',
         tags: ['simple harmonic motions', 'maths']
     },
     {
@@ -1109,11 +1109,11 @@ export const QUESTION_BANK = [
         tags: ['gravity', 'kinematics', 'maths']
     },
     {
-        id: '2021-06', year: 2021, marks: 2, stemParts: ['Two fair dice are rolled; let ', { math: 'P(S)' }, ' be the probability the sum is ', { math: 'S' }, '. ', 'Which statements are true?'], image: '/graphs/2021-6.png', options: [{ text: '1,2,4' }, { text: '3,4,5' }, { text: '2,3,4' }, { text: '1,3,5' }, { text: '1,4,5' }], correct: 'E',
+        id: '2021-06', year: 2021, marks: 2, stemParts: ['Two fair dice are rolled; let ', { math: 'P(S)' }, ' be the probability the sum is ', { math: 'S' }, '. ', 'Which statements are true?'], image: GRAPH('/graphs/2021-6.png'), options: [{ text: '1,2,4' }, { text: '3,4,5' }, { text: '2,3,4' }, { text: '1,3,5' }, { text: '1,4,5' }], correct: 'E',
         tags: ['maths']
     },
     {
-        id: '2021-07', year: 2021, marks: 2, stem: 'A ray passes through three media with refractive indices n₁, n₂, n₃ as in the diagram. Order n₁, n₂, n₃ by increasing value.', image: '/graphs/2021-7.png', options: [{ math: 'n_1,\\,n_2,\\,n_3' }, { math: 'n_2,\\,n_1,\\,n_3' }, { math: 'n_1,\\,n_3,\\,n_2' }, { math: 'n_3,\\,n_1,\\,n_2' }, { math: 'n_3,\\,n_2,\\,n_1' }], correct: 'D',
+        id: '2021-07', year: 2021, marks: 2, stem: 'A ray passes through three media with refractive indices n₁, n₂, n₃ as in the diagram. Order n₁, n₂, n₃ by increasing value.', image: GRAPH('/graphs/2021-7.png'), options: [{ math: 'n_1,\\,n_2,\\,n_3' }, { math: 'n_2,\\,n_1,\\,n_3' }, { math: 'n_1,\\,n_3,\\,n_2' }, { math: 'n_3,\\,n_1,\\,n_2' }, { math: 'n_3,\\,n_2,\\,n_1' }], correct: 'D',
         tags: ['optics']
     },
     {
@@ -1121,7 +1121,7 @@ export const QUESTION_BANK = [
         tags: ['maths']
     },
     {
-        id: '2021-09', year: 2021, marks: 2, stem: 'In the circuit shown, what is the current at point P?', image: '/graphs/2021-9.png', options: [{ math: '\\tfrac{2V}{13R}' }, { math: '\\tfrac{2V}{11R}' }, { math: '\\tfrac{V}{9R}' }, { math: '\\tfrac{6V}{13R}' }, { math: '\\tfrac{6V}{11R}' }], correct: 'A',
+        id: '2021-09', year: 2021, marks: 2, stem: 'In the circuit shown, what is the current at point P?', image: GRAPH('/graphs/2021-9.png'), options: [{ math: '\\tfrac{2V}{13R}' }, { math: '\\tfrac{2V}{11R}' }, { math: '\\tfrac{V}{9R}' }, { math: '\\tfrac{6V}{13R}' }, { math: '\\tfrac{6V}{11R}' }], correct: 'A',
         tags: ['electricity', 'maths']
     },
     {
@@ -1129,17 +1129,17 @@ export const QUESTION_BANK = [
         tags: ['maths']
     },
     {
-        id: '2021-11', year: 2021, marks: 2, stemParts: ["Consider the following five graphs. For which graphs could the are under the graph potentially be a measurement of energy?"], image: '/graphs/2021-11.png', options: [{ text: '1, 4, 5' }, { text: '1, 5' }, { text: '1, 4' }, { text: '1, 3, 4' }, { text: 'All of them' }], correct: 'A',
+        id: '2021-11', year: 2021, marks: 2, stemParts: ["Consider the following five graphs. For which graphs could the are under the graph potentially be a measurement of energy?"], image: GRAPH('/graphs/2021-11.png'), options: [{ text: '1, 4, 5' }, { text: '1, 5' }, { text: '1, 4' }, { text: '1, 3, 4' }, { text: 'All of them' }], correct: 'A',
         tags: ['dynamics']
     },
     {
-        id: '2021-12', year: 2021, marks: 2, stem: 'Which of the following integrals are equal to zero (no need to evaluate explicitly)?', image: '/graphs/2021-12.png', options: [{ text: '1, 2' }, { text: '3, 4' }, { text: '1' }, { text: '1, 2, 5' }, { text: '1, 5' }], correct: 'D',
+        id: '2021-12', year: 2021, marks: 2, stem: 'Which of the following integrals are equal to zero (no need to evaluate explicitly)?', image: GRAPH('/graphs/2021-12.png'), options: [{ text: '1, 2' }, { text: '3, 4' }, { text: '1' }, { text: '1, 2, 5' }, { text: '1, 5' }], correct: 'D',
         tags: ['maths']
     },
 
     // ---------------- 2022 MCQs ----------------
     {
-        id: '2022-01', year: 2022, marks: 2, stem: 'What is the total resistance of the circuit?', image: '/graphs/2022-1.png', options: [{ math: '\\tfrac{11R}{6}' }, { math: '6R' }, { math: '\\tfrac{6R}{11}' }, { math: '3R' }, { math: '\\tfrac{R}{3}' }], correct: 'A',
+        id: '2022-01', year: 2022, marks: 2, stem: 'What is the total resistance of the circuit?', image: GRAPH('/graphs/2022-1.png'), options: [{ math: '\\tfrac{11R}{6}' }, { math: '6R' }, { math: '\\tfrac{6R}{11}' }, { math: '3R' }, { math: '\\tfrac{R}{3}' }], correct: 'A',
         tags: ['electricity', 'maths']
     },
     {
@@ -1171,7 +1171,7 @@ export const QUESTION_BANK = [
         tags: ['maths']
     },
     {
-        id: '2022-09', year: 2022, marks: 2, stemParts: ['As it appears to move across the sky, the Sun moves through an angle equal to that subtended by its diameter in about two minutes, as in the diagram. In a solar eclipse, the Moon covers the Sun almost exactly in the sky. Using this, what is the approximate ratio of the Moon’s radius to its orbital distance from Earth?'], image: '/graphs/2022-9.png', options: [{ math: '0.0014' }, { math: '0.0022' }, { math: '0.0028' }, { math: '0.0044' }, { math: '0.0056' }], correct: 'D',
+        id: '2022-09', year: 2022, marks: 2, stemParts: ['As it appears to move across the sky, the Sun moves through an angle equal to that subtended by its diameter in about two minutes, as in the diagram. In a solar eclipse, the Moon covers the Sun almost exactly in the sky. Using this, what is the approximate ratio of the Moon’s radius to its orbital distance from Earth?'], image: GRAPH('/graphs/2022-9.png'), options: [{ math: '0.0014' }, { math: '0.0022' }, { math: '0.0028' }, { math: '0.0044' }, { math: '0.0056' }], correct: 'D',
         tags: ['astronomy', 'estimation', 'maths']
     },
     {
@@ -1205,7 +1205,7 @@ export const QUESTION_BANK = [
         tags: ['maths']
     },
     {
-        id: '2023-05', year: 2023, marks: 2, stem: 'Consider the pulley system in the diagram, containing 4 wheels. If you pull the free end a distance y, how far will m rise by?', image: '/graphs/2023-5.png', options: [{ math: '\\tfrac{y}{16}' }, { math: '\\tfrac{y}{4}' }, { math: '\\tfrac{y}{2}' }, { math: '2y' }, { math: '4y' }], correct: 'B',
+        id: '2023-05', year: 2023, marks: 2, stem: 'Consider the pulley system in the diagram, containing 4 wheels. If you pull the free end a distance y, how far will m rise by?', image: GRAPH('/graphs/2023-5.png'), options: [{ math: '\\tfrac{y}{16}' }, { math: '\\tfrac{y}{4}' }, { math: '\\tfrac{y}{2}' }, { math: '2y' }, { math: '4y' }], correct: 'B',
         tags: ['statics', 'maths']
     },
     {
@@ -1216,9 +1216,7 @@ export const QUESTION_BANK = [
         "id": "2023-07", "year": 2023, "marks": 2, "stemParts": ["If ", { "math": "y = \\Bigl(2+\\tfrac{x}{2}\\Bigr)^{4}" }, ", which of the following is ", { "math": "\\tfrac{dy}{dx}" }, "?"], "options": [{ "math": "4 + 2x + \\tfrac{3x^{2}}{4 }+\\tfrac{x^{3}}{4 }" }, { "math": "8 + 6x +\\tfrac{3x^{2}}{2 }+\\tfrac{x^{3}}{8 }" }, { "math": "32 + 24x + 6x^{2}+\\tfrac{x^{3}}{2}" }, { "math": "16 + 12x +3x^{2}+\\tfrac{x^{3}}{4 }" }, { "math": "2 + x + \\tfrac{3x^{2}}{8 }+\\tfrac{x^{3}}{8 }" }], "correct": "D",
         tags: ['maths']
     },
-    {
-        "id": "2023-07", "year": 2023, "marks": 2, "stemParts": ["If ", { "math": "y = \\Bigl(2+\\tfrac{x}{2}\\Bigr)^{4}" }, ", which of the following is ", { "math": "\\tfrac{dy}{dx}" }, "?"], "options": [{ "math": "4 + 2x + \\tfrac{3x^{2}}{4 }+\\tfrac{x^{3}}{4 }" }, { "math": "8 + 6x +\\tfrac{3x^{2}}{2 }+\\tfrac{x^{3}}{8 }" }, { "math": "32 + 24x + 6x^{2}+\\tfrac{x^{3}}{2}" }, { "math": "16 + 12x +3x^{2}+\\tfrac{x^{3}}{4 }" }, { "math": "2 + x + \\tfrac{3x^{2}}{8 }+\\tfrac{x^{3}}{8 }" }], "correct": "D",
-        tags: ['electricity']
+    { id: '2023-08', year: 2023, marks: 2, stem: 'All resistors in the circuit below have the same value. If an ammeter is placed in the circuit in turn at points (a) through to (e), which of the following sets of points will give the same reading?', image: GRAPH('/graphs/2023-8.png'), options: [ { text: 'a, b' }, { text: 'a, c' }, { text: 'b, e' }, { text: 'c, d' }, { text: 'a, b, c' } ], correct: 'B',tags: ['electricity']
     },
     {
         "id": "2023-09", "year": 2023, "marks": 2, "stemParts": ["If ", { "math": "\\tfrac{dy}{dx} = x^{2} +\\tfrac{ 1}{x^{3}}" }, " and ", { "math": "y = 0" }, " when ", { "math": "x = 1" }, ", what is ", { "math": "\\int_{1}^{3} y\\,dx" }, "?"], "options": [{ "math": "\\tfrac{4}{3}" }, { "math": "\\tfrac{8}{3}" }, { "math": "\\tfrac{20}{3}" }, { "math": "8" }, { "math": "\\tfrac{22}{3}" }], "correct": "C",
